@@ -1,0 +1,54 @@
+site_name: Safekey
+theme:
+    name: material
+    language: ru
+    logo: img/128x128.png
+    favicon: img/128x128.png
+    features:
+    - navigation.sections
+    extra:
+        homepage: https://safekeytotp.ru
+    palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+nav:
+    - Главная: index.md
+    - Начало работы:
+        - Установка на Windows: getting-started/ustanovka-na-windows.md
+        - Установка на Linux: getting-started/ustanovka-na-linux.md
+        - Установка на MacOS: getting-started/ustanovka-na-macos.md
+    - Работа с кодами:
+        - Создание ключа: codes/sozdanie-klyucha.md
+        - Перемещение ключей: codes/peremeshenie-klyuchei.md
+        - Редактирование ключа: codes/redaktirovanie-klyucha.md
+        - Удаление ключа: codes/udalenie-klyucha.md
+        - Другие функции списка: codes/drugie-funkcii-spiska.md
+    - Импорт и экспорт:
+        - Импорт из X2F: import-export/import-iz-x2f.md
+        - Импорт из Google Authenticator: import-export/import-iz-google-authenticator.md
+        - Экспорт: import-export/eksport.md
+        - Миграция из Xorek2FA: import-export/migraciya-iz-xorek2fa.md
+    - Настройки:
+        - Защита входа: settings/zashita-vkhoda.md
