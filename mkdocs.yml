@@ -35,6 +35,7 @@ markdown_extensions:
 
 nav:
     - Главная: index.md
+    - Политика конфиденциальности (Google): privacy_policy.md
     - Начало работы:
         - Установка на Windows: getting-started/ustanovka-na-windows.md
         - Установка на Linux: getting-started/ustanovka-na-linux.md
